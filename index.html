@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaekers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <p>Loading...</p>
+    </div>
+    <nav id="nav">
+        <div class="navTop">
+            <h2>Snaekers.</h2>
+            <div class="navSearch">
+                <input type="text" id="search" name="search" placeholder="Search...">
+                <img src="./img/search.png" alt="" width="20" height="20">
+            </div>
+            <div class="limitedOffer">
+                <p>Limited offer!</p>
+            </div>
+        </div>
+
+        <div class="navBottom">
+            <div class="menu">
+                <h3 id="links">Air jordan</h3>
+                <h3 id="links">Blazer</h3>
+                <h3 id="links">Crater</h3>
+                <h3 id="links">Hippie</h3>
+                <h3 id="links">Jordan 1</h3>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="slider">
+            <div class="box">
+                <img src="./img/air.png" alt="air jordan">
+                <p class="shoesTitle">Air jordan <br>New <br>Season</p>
+                <p class="shoesPrice">$121</p>
+                <a href="#product"><button class="buyBtn">Buy now</button></a>
+                <div class="bg"></div>
+            </div>
+
+            <div class="box">
+                <img src="./img/blazer.png" alt="blazer">
+                <p class="shoesTitle">Blazer <br>New <br>Season</p>
+                <p class="shoesPrice">$91</p>
+                <a href="#product"><button class="buyBtn">Buy now</button></a>
+                <div class="bg"></div>
+            </div>
+
+            <div class="box">
+                <img src="./img/crater.png" alt="crater">
+                <p class="shoesTitle">Crater <br>New <br>Season</p>
+                <p class="shoesPrice">$136</p>
+                <a href="#product"><button class="buyBtn">Buy now</button></a>
+                <div class="bg"></div>
+            </div>
+
+            <div class="box">
+                <img src="./img/hippie.png" alt="hippie">
+                <p class="shoesTitle">hippie <br>New <br>Season</p>
+                <p class="shoesPrice">$103</p>
+                <a href="#product"><button class="buyBtn">Buy now</button></a>
+                <div class="bg"></div>
+            </div>
+
+            <div class="box">
+                <img src="./img/jordan.png" alt="jordan 1">
+                <p class="shoesTitle">Jordan 1 <br>New <br>Season</p>
+                <p class="shoesPrice">$66</p>
+                <a href="#product"><button class="buyBtn">Buy now</button></a>
+                <div class="bg"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="displayer">
+            <div class="box">
+                <img src="./img/shipping.png" alt="" width="60" height="60">
+                <p class="title">Free shipping</p>
+                <p class="comment">Free world wide shipping on all oders.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/return.png" alt="" width="60" height="60">
+                <p class="title">30 days return</p>
+                <p class="comment">No question return and easy refund in 14 days.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/gift.png" alt="" width="60" height="60">
+                <p class="title">Gift cards</p>
+                <p class="comment">Buy gift cards and use coupon codes easily.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/contact.png" alt="" width="60" height="60">
+                <p class="title">Contact us !</p>
+                <p class="comment">Keep in touch via email and support system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+            <div class="box">
+                <div class="part1">
+                    <img src="./img/air.png" alt="" id="currentImg">
+                </div>
+                <div class="part2">
+                    <h2 class="productTitle" id="productTitle">Air jordan</h2>
+                    <p class="productPrice" id="currentPrice">$121</p>
+                    <p class="productAbout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam harum nihil reiciendis facere nam eligendi ducimus voluptatibus placeat et?</p>
+                    <div class="colors">
+                        <div class="first" id="change"></div>
+                        <div class="second" id="change"></div>
+                    </div>
+                    <div class="sizes">
+                        <div id="sizes">41</div>
+                        <div id="sizes">42</div>
+                        <div id="sizes">43</div>
+                    </div>
+                    <button class="buyButton" id="buyButton">Buy</button>
+                </div>
+            </div>
+
+            <div class="payScreen" id="payScreen">
+                <h2>Personal Information</h2>
+                <div class="cancel" id="cancel">
+                    <p>&times;</p>
+                </div>
+                <form action="">
+                    <label for="name">Name and Surnname</label> <br>
+                    <input type="text" id="name" placeholder="Volonte Rwicha"> <br>
+
+                    <label for="number">Phone Number</label> <br>
+                    <input type="text" id="number" placeholder="+1 234 5678"> <br>
+
+                    <label for="name">Adress</label> <br>
+                    <input type="text" id="adress" placeholder="Gisozi 21 22-167"> <br>
+
+                    <h3>Card Information</h3> <br>
+                    <div class="cardInfo">
+                        <img src="./img/visa.png" alt="" width="40" height="40">
+                        <img src="./img/master.png" alt="" width="40" height="40">
+                    </div> <br>
+
+                    <input type="text" name="cardNu" id="cardNu" placeholder="Card Number" required> <br>
+
+                    <button type="submit" id="checkout">Checkout!</button>
+                </form>
+            </div>
+
+    </section>
+
+    <section class="gallery">
+
+        <div class="galleryItem">
+            <h1>Be Yourself!</h1>
+            <img src="./img/pic1.jpg" alt="" width="400" height="500" class="pic1">
+        </div>
+
+        <div class="galleryItem">
+            <img src="./img/pic2.jpg" alt="" width="400" height="500" class="pic2">
+            <h1>This is the First Day of Your New Life</h1>
+        </div>
+
+        <div class="galleryItem">
+            <h1>Just do it!</h1>
+            <img src="./img/pic3.jpg" alt="" width="400" height="500" class="pic3">
+        </div>
+    </section>
+
+    <section class="newSeason">
+        <div class="nsItem">
+            <img src="./img/ns1.jpg" alt="" width="300" height="500">
+        </div>
+
+        <div class="nsItem">
+            <h3>Winter new arrivals</h3>
+            <h2>New season</h2>
+            <h1>New collection</h1>
+            <a href="#nav"><button>Choose your style</button></a>
+        </div>
+
+        <div class="nsItem">
+            <img src="./img/ns2.jpg" alt="" width="300" height="500">
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="content">
+                <h2>About us</h2>
+                <ul>
+                    <li>Company</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                    <li>Stores</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>Support</li>
+                    <li>Refund</li>
+                    <li>FAQ</li>
+                    <li>Feedback</li>
+                    <li>Stories</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>Products</h2>
+                <ul>
+                    <li class="fList">Air jordan</li>
+                    <li class="fList">Blazer</li>
+                    <li class="fList">Crater</li>
+                    <li class="fList">Hippie</li>
+                    <li class="fList">Jordan 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <h2>Suscribe to our newsletter</h2>
+            <div class="inputBox">
+                <input type="text" placeholder="your@email.com">
+                <button>Join!</button>
+            </div>
+            <div class="followUs">
+                <h3>Follow Us</h3>
+                <div class="ico">
+                    <img src="./img/facebook.png" alt="" height="25" width="25">
+                    <img src="./img/twitter.png" alt="" height="25" width="25">
+                    <img src="./img/instagram.png" alt="" height="25" width="25">
+                    <img src="./img/whatsapp.png" alt="" height="25" width="25">
+                </div>
+            </div>
+            <p>&copy;Volonte Rwicha. All rights reserved. 2023.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
